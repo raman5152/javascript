@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obejects and events in javascript</title>
+    <script>
+        function addnum(){
+            var firstNum=parent( document.getElementById("txtnum").value);
+            var secNum=parent( document.getElementById("txtnum1").value);
+            document.getElementById("result").value=firstNum + secNum;
+        }
+    </script>
+</head>
+<body>
+    <form id="form1">
+        <table style="border: 1px solid black;">
+        <tr>
+            <td>
+                firstNum
+            </td>
+            <input type="number" id="txtnum">
+        
+            
+            <td>secNum</td>
+            <input type="number" id="txtnum1">
+        
+        
+            <td>
+                Result
+            </td>
+            <input type="text" id="result">
+        </tr>
+        <td>
+            <input type="button" value="add" id="btnAdd" onclick="addnum()"/>
+        </td>
+    </table>
+    </form>
+</body>
+</html>

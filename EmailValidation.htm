@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email validqation</title>
+</head>
+<body>
+    <label for="email">email</label>
+    <input type="email" name="email" id="txtEmail" onkeyup="validateEmail()">
+    <script>
+    function validateEmail(){
+        var emailTextBox=document.getElementById("txtEmail");
+        var email= emailTextBox.value;
+        var emailRegEx=  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    emailTextBox.style.color="balck";
+    if(emailRegEx.test(email)){
+        emailRegEx.style.backgroundColor="green";
+    }else{
+        emailRegEx.style.backgroundColor="red";
+    }
+
+        }
+    </script>
+</body>
+</html>

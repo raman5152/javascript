@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even or odd number checking</title>
+    <script>
+        function IsEven(){
+            var number=document.getElementById("TextBox1").value;
+            if(number % 2==0){
+                alert(number +"is odd  number" );
+
+            }
+            else{
+                alert(number + "is even number");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        Number:
+        <input id="TextBox1" type="number">
+        <input type="button" value="check Number" onclick="IsEven()"/>
+    </form>
+</body>
+</html>
